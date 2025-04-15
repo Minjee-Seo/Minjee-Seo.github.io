@@ -50,8 +50,8 @@
     );
     --text-gradient-yellow: linear-gradient(
       to right, 
-      hsl(101, 46%, 61%), 
-      hsl(101, 38%, 40%)
+      hsl(101, 62%, 68%), 
+      hsl(101, 39%, 52%)
     );
   
     /* solid */
@@ -63,8 +63,8 @@
     --smoky-black: hsl(0, 0%, 7%);
     --white-1: hsl(0, 0%, 100%);
     --white-2: hsl(0, 0%, 98%);
-    --orange-yellow-crayola: hsl(101, 46%, 61%);
-    --vegas-gold: hsl(101, 36%, 46%);
+    --orange-yellow-crayola: hsl(101, 62%, 68%);
+    --vegas-gold: hsl(101, 39%, 52%);
     --light-gray: hsl(0, 0%, 84%);
     --light-gray-70: hsla(0, 0%, 84%, 0.7);
     --bittersweet-shimmer: hsl(0, 43%, 51%);
