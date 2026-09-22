@@ -540,10 +540,6 @@
     z-index: -1;
   }
   
-  .service-icon-box { margin-bottom: 10px; }
-  
-  .service-icon-box img { margin: auto; }
-  
   .service-content-box { text-align: center; }
   
   .service-item-title { margin-bottom: 7px; }
@@ -1399,11 +1395,6 @@
       padding: 30px;
     }
   
-    .service-icon-box {
-      margin-bottom: 0;
-      margin-top: 5px;
-    }
-  
     .service-content-box { text-align: left; }
   
     /* testimonials */
@@ -1726,8 +1717,8 @@
     /* service */
   
     .service-list {
-      grid-template-columns: 1fr 1fr;
-      gap: 20px 25px;
+      grid-template-columns: 1fr;
+      gap: 20px;
     }
   
     /* testimonials */
