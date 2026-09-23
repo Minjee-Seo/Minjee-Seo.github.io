@@ -862,6 +862,11 @@
     height: 100%;
     border-radius: inherit;
   }
+
+  .publications .timeline-text strong {
+  color: var(--orange-yellow-crayola);
+  font-weight: var(--fw-600);
+  }
   
   
   
