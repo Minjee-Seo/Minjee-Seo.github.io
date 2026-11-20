@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minjee Seo | Personal Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/dino.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <!--
+  <link rel="stylesheet" href="./assets/css/style.css">
+-->
+  <link rel="stylesheet" href="./assets/css/style_blue.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+.portfolio .research-intro{color:var(--light-gray,#ced3dc);font-size:15px;line-height:1.8;margin-bottom:28px}
+.portfolio .research-list{display:grid;gap:20px}
+.portfolio .research-entry{border:1px solid var(--jet,#38404d);border-radius:16px;background:var(--eerie-black-1,#20232c);overflow:hidden}
+.portfolio .research-entry summary{padding:26px;cursor:pointer;list-style:none}
+.portfolio .research-entry summary::-webkit-details-marker{display:none}
+.portfolio .research-entry summary:focus-visible{outline:2px solid var(--orange-yellow-crayola,#9eb9ed);outline-offset:-4px;border-radius:16px}
+.portfolio .research-meta{display:block;color:var(--orange-yellow-crayola,#9eb9ed);font-size:12px;letter-spacing:.05em;margin-bottom:12px}
+.portfolio h3{color:var(--white-2,#f5f6fa);font-size:21px;line-height:1.45;margin-bottom:12px}
+.portfolio p{color:var(--light-gray,#ced3dc);font-size:14px;line-height:1.85}
+.portfolio .research-read{display:block;color:var(--orange-yellow-crayola,#9eb9ed);font-size:13px;margin-top:18px}
+.portfolio .research-read span{display:inline}
+.portfolio .research-body{padding:0 26px 28px;border-top:1px solid var(--jet,#38404d)}
+.portfolio h4{color:var(--white-2,#f5f6fa);font-size:16px;margin:24px 0 8px}
+.portfolio .research-body img{max-width:100%;height:auto;border-radius:10px;margin-top:16px}
+@media(max-width:580px){.navbar-list{gap:0;justify-content:space-evenly}.navbar-link{font-size:11px;padding:20px 6px}.portfolio .research-entry summary{padding:20px}.portfolio .research-body{padding:0 20px 22px}.portfolio h3{font-size:18px}}
+</style></head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/profile.jpeg" alt="Minjee Seo" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Minjee Seo">Minjee Seo</h1>
+
+          <p class="title">AI Engineer & Researcher</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:islandz@yonsei.ac.kr" class="contact-link">islandz@yonsei.ac.kr</a>
+            </div>
+
+          </li>
+<!--
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+8210" class="contact-link">+82 10-xxxx-xxxx</a>
+            </div>
+
+          </li>
+-->
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1999-04-21">April 21, 1999</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Seoul, Republic of Korea</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://scholar.google.com/citations?user=Uk59HbYAAAAJ&hl=ko" class="social-link">
+              <ion-icon name="school-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/minjee-seo-24541537a/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://sites.google.com/view/yoonlabyonsei/" class="social-link">
+              <ion-icon name="flask-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://minmiin.tistory.com/" class="social-link">
+              <ion-icon name="home-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About Me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a Ph.D student of Yonsei university, department of computational science and engineering. I'm an AI developer and researcher of Computational Methods in Medical Engineering (CMME) Lab. My research interest is in adapting computational engineering techniques in medical domain, specifically for modeling and analyzing physical phenomena during treatment procedures.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Research Interests</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Transcranial Focused Ultrasound</h4>
+
+                <p class="service-item-text">
+                  Low-intensity transcranial focused ultrasound (LIFU) is an emerging noninvasive technique for precisely modulating targets within the brain. Its major challenge is skull-induced attenuation and aberration, which distort the acoustic focus. To address this, we develop AI-accelerated simulation methods and patient-specific acoustic holographic lenses for accurate and efficient treatment planning.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Physics-Guided AI</h4>
+
+                <p class="service-item-text">
+                  High-fidelity numerical solvers accurately model physical phenomena, but their computational cost limits real-time applications. Physics-guided AI combines simulation data with physical knowledge to learn fast and reliable mappings between treatment conditions and resulting fields. Our work explores surrogate modeling, super-resolution networks, and neural operators across acoustic, thermal, and mechanical problems.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Digital Twins</h4>
+
+                <p class="service-item-text">
+                  Medical digital twins provide virtual representations of patients and treatments that can be updated as conditions change. Their practical use requires models that integrate patient anatomy, treatment parameters, and physical processes while producing predictions in real time. We develop simulation-driven digital twins for personalized treatment planning and monitoring, with a particular focus on transcranial focused ultrasound.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Medical AI</h4>
+
+                <p class="service-item-text">
+                  Medical AI can extract clinically relevant information from complex imaging and physiological data. However, purely data-driven models may overlook the physical mechanisms that govern treatment response. We combine multimodal learning from CT and MR images, tissue segmentation, and physics-based prediction to support safer and more personalized therapies.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Outside the Lab</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-content-box">
+                <p class="service-item-text">
+                  Rock music and festivals. Pokémon. Contemporary art. And a good highball!
+                </p>
+              </div>
+
+            </li>
+
+        </section>
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Yonsei University</h4>
+
+              <span>Mar 2023 — Present</span>
+
+              <p class="timeline-text">
+                Integrated M.S./Ph.D., Compuational Science and Engineering
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Ewha Womans University</h4>
+
+              <span>Mar 2019 — Feb 2023</span>
+
+              <p class="timeline-text">
+                B.S., Division of Mechanical and Biomedical Engineering<br>
+                (Minor: Computer Science and Engineering)
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="hammer-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Research experiences</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Computational Methods in Medical Engineering Lab</h4>
+
+              <span>Mar 2023 — Present</span>
+
+              <p class="timeline-text">
+                Researcher (Advisor: Prof. Kyungho Yoon)<br>
+                Deep learning-based forward simulation
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Neuromodulation and Tissue Engineering Lab</h4>
+
+              <span>Jan 2024</span>
+
+              <p class="timeline-text">
+                Visiting Scholar (Advisor: Prof. Seung-Schik Yoo)<br>
+                Forward simulation of tFUS using FDTD and PSTD
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Computational Methods in Medical Engineering Lab</h4>
+
+              <span>Jun 2022 — Feb 2023</span>
+
+              <p class="timeline-text">
+                Undergraduate Researcher (Advisor: Prof. Kyungho Yoon)<br>
+                Deep learning-based inverse simulation
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Medical Imaging & Learning Lab</h4>
+
+              <span>Jan 2021 — Dec 2021</span>
+
+              <p class="timeline-text">
+                Undergraduate Researcher (Advisor: Prof. Taehoon Shin)<br>
+                Deep learning-based body tissue segmentation
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="mic-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Honors & Awards</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                <strong>Runner-up Best Paper Award in MICCAI 2025 Workshop on DT4H</strong>, 2025.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                <strong>2025 KSME Bioengineering Division Best Paper Awards</strong>, 2025.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                <strong>27th Yonsei CSE Poster Exhibition</strong>, Award of Excellence (The 1st Prize), 2025.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                <strong>22th Yonsei CSE Poster Exhibition</strong>, Award of Excellence, 2023.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                <strong>2022 KSES Energy Data and AI Utilization Idea Contest</strong>, Award of Encouragement, 2022.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">MATLAB</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C/C++</h5>
+                <data value="40">40%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">CUDA</h5>
+                <data value="40">20%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 20%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <article class="publications" data-page="publications">
+
+        <header>
+          <h2 class="h2 article-title">Publications</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Journal</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                1. <strong class="mseo">M. Seo</strong>, H. You, M. Seol, SS. Yoo, S. Lee, K. Yoon, Optimization of acoustic lens design for transcranial holographic ultrasound using an active learning-based genetic algorithm, <i>Journal of Computational Design and Engineering</i>, 2026;13:1-20.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                2. M. Seol, <strong class="mseo">M. Seo</strong>, M. Shin, SS. Yoo, K. Yoon, Deep learning based real-time phase-amplitude correction for phased array transducers in transcranial focused ultrasound, <i>Journal of Computational Design and Engineering</i>, 2026;13:95-115.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                3. M. Shin, <strong class="mseo">M. Seo</strong>, H. Choi, J. Jung, K. Yoon, Local stress fields prediction using global displacement through Fourier Neural Operators, <i>Journal of Computational Design and Engineering</i>, 2025;12:21-40.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                4. <strong class="mseo">M. Seo</strong>, M. Shin, G. Noh, SS. Yoo, K. Yoon, Multi-modal networks for real-time monitoring of intracranial acoustic field during transcranial focused ultrasound therapy, <i>Computer Methods and Programs in Biomedicine</i>, 2024;257:108458.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                5. M. Shin, <strong class="mseo">M. Seo</strong>, S. Cho, J. Park, JH. Kwon, D. Lee, K. Yoon, PhysRFANet: Physics-guided neural network for real-time prediction of thermal effect during radiofrequency ablation treatment, <i>Engineering Applications of Artificial Intelligence</i>,  2024;138:109349.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                6. M. Shin, <strong class="mseo">M. Seo</strong>, SS. Yoo, K. Yoon, tFUSFormer: Physics-guided super-resolution Transformer for simulation of transcranial focused ultrasound propagation, <i>IEEE Journal of Biomedical and Health Informatics</i>, 2024;28:4024-4035.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                7. M. Shin, <strong class="mseo">M. Seo</strong>, K. Lee, K. Yoon, Super-resolution techniques for biomedical applications and challenges, <i>Biomedical Engineering Letters</i>, 2024;14:465-496.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="mic-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Conference Presentations</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                1.  H. Ghafoor, <strong class="mseo">M. Seo</strong>, S. Cho, K. Yang, J. Lee, K. Yoon, SMILE: A Structured Multi-Agent Clinical Reasoning for Liver Ultrasound Understanding, <i>Winter Conference on Applications of Computer Vision</i>, 2027.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                2. <strong class="mseo">M. Seo</strong>, H. Ghafoor, M. Seol, S. Cho, K. Yoon, tFUSOperator: Operator Learning for Transcranial Focused Ultrasound Digital Twins, <i>Digital Twin for Healthcare Workshop at MICCAI</i>, 2026.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                3. <strong class="mseo">M. Seo</strong>, M. Shin, G. Noh, SS. Yoo, K. Yoon, Acoustic Simulation with Deep Learning for Low-intensity Transcranial Focused Ultrasound Digital Twins, <i>Digital Twin for Healthcare Workshop at MICCAI</i>, 2025.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                4. <strong class="mseo">M. Seo</strong>, M. Shin, G. Noh, SS. Yoo, K. Yoon, Multi-modal deep learning for real-time monitoring of intracranial acoustic field in transcranial focused ultrasound, <i>International Society for Therapeutic Ultrasound</i>, 2025.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                5. <strong class="mseo">M. Seo</strong>, K. Yoon, Deep Learning-based Denoising of Monte Carlo Simulation for Laser-Tissue Interaction Modeling, <i>Korean Society of Mechanical Engineers Bioengineering Division</i>, 2025.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                6. <strong class="mseo">M. Seo</strong>, S. Lee, K. Yoon, Deep Learning-based Lens Design Method for Transcranial Holographic Ultrasound, <i>Korean Society of Mechanical Engineers Annual Meeting</i>, 2025.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                7. <strong class="mseo">M. Seo</strong>, M. Shin, G. Noh, K. Yoon, Real-Time Simulation of tFUS using Multimodal Swin Transformer, <i>Korean Institute of Communications and Information Sciences Summer conference</i>, 2024.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                8. <strong class="mseo">M. Seo</strong>, M. Shin, G. Noh, K. Yoon, Multi-modal Generative Adversarial Network for transcranial focused ultrasound simulation, <i>Korean Institute of Communications and Information Sciences Fall conference</i>, 2023.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                9. <strong class="mseo">M. Seo</strong>, M. Shin, K. Yoon, Real-time pressure field monitoring of transcranial focused ultrasound using Generative Adversarial Network, <i>Korean Society of Mechanical Engineers Bioengineering Division</i>, 2023.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                10. <strong class="mseo">M. Seo</strong>, K. Yoon, Generative Adversarial Network-based real-time pressure field monitoring of transcranial focused ultasound, <i>Annual Meeting of the Korean Society for Industrial and Applied Mathematics</i>, 2022.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                11. <strong class="mseo">M. Seo</strong>, K. Yoon, Thermal energy digital twin model for building performance monitoring, <i>Korean Solar Energy Society Autumn Annual Conference</i>, 2022.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        
+
+      </article>
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="portfolio" data-page="portfolio"><header><h2 class="h2 article-title">Portfolio</h2></header><p class="research-intro">Selected research in computational medicine, acoustic simulation, and AI. Personal thoughts and reflections on each project are shared in the <strong>Personal reflections</strong> section of each article.</p><div class="research-list">
+      <details class="research-entry" id="tfus-monitoring">
+      <summary><span class="research-meta">2024 · Surrogate modeling · Deep learning · Multimodal learning </span><h3>Deep learning based real-time intracranial acoustic field simulation for transcranial focused ultrasound</h3><p>Predicting intracranial pressure fields from acoustic free-field pressure maps, anatomical images and transducer configurations. The work was published in <i>Computer Methods and Programs in Biomedicine</i> in 2024.</p><span class="research-read">Read article <span aria-hidden="true">↗</span></span></summary>
+      <div class="research-body">
+      <figure>
+        <img
+          src="./assets/images/portfolio/tfus1-overview.png"
+          loading="lazy"
+        >
+      </figure>
+      <h4>Introduction</h4><p>
+        Transcranial focused ultrasound (tFUS) is a promising non-invasive therapeutic technology that delivers concentrated acoustic energy to targeted regions of the brain. It has demonstrated clinical potential for treating neurological disorders, including Parkinson's disease and essential tremor, and has also emerged as a promising modality for non-invasive neuromodulation.
+        <figure>
+        <img
+          src="./assets/images/portfolio/tfus1-intro.png"
+          loading="lazy"
+        >
+        </figure>
+      </p>
+      <h4>Problem definition</h4><p>
+        A major challenge in tFUS is the distortion of ultrasound waves as they propagate through the skull. Due to the heterogeneous acoustic properties of skull tissues, the transmitted waves undergo refraction, attenuation, and phase aberration, potentially shifting the acoustic focus away from the intended target. Therefore, real-time monitoring of the intracranial acoustic pressure field is essential for ensuring accurate and safe treatment.
+        <br><br>Conventional numerical simulations can accurately estimate intracranial acoustic fields by incorporating patient-specific skull geometries and acoustic properties derived from computed tomography (CT). However, their high computational cost makes them impractical for real-time applications.
+      </p>
+      <h4>Methodology</h4><p>
+        To overcome this limitation, we developed multi-modal deep learning surrogate models capable of predicting intracranial acoustic pressure fields in real time. Our approach integrates three complementary input modalities: <br>
+        </p>
+        <figure style="width: 50%; margin: 1px auto;">
+        <img
+          src="./assets/images/portfolio/tfus1-inputs.png"
+          loading="lazy"
+        >
+        </figure>
+        <p>
+        <br><strong>Acoustic free-field</strong>: The pressure field generated by ultrasound propagation in a homogeneous medium without the skull. It provides the baseline spatial distribution of acoustic energy before skull-induced distortion.
+        <br><strong>Skull images (CT/MR)</strong>: Anatomical information that enables the network to learn how skull structures influence acoustic wave propagation and distort the pressure field.
+        <br><strong>Transducer placement</strong>: A six-dimensional vector describing the position and orientation of the ultrasound transducer, providing additional spatial information about the sonication configuration.
+        </p>
+        <figure>
+        <img
+          src="./assets/images/portfolio/tfus1-network.png"
+          loading="lazy"
+        >
+        </figure>
+        <p><br><br>We investigated three network architectures: a 3D CNN-based Autoencoder (AE), a 3D CNN-based U-Net, and a Swin Transformer-based U-Net. Each model employs a multi-modal encoder to extract and integrate features from the different inputs, followed by a decoder that reconstructs the three-dimensional intracranial acoustic pressure field.
+        <br><br>For training and evaluation, we constructed a simulation dataset using CT and MR images from 11 human subjects. Reference intracranial pressure fields were generated using the <i>k</i>-space numerical simulation method, allowing the networks to learn the relationship between transducer configurations, skull anatomy, and acoustic wave propagation.
+        </p>
+      <h4>Results</h4>
+        <figure>
+        <img
+          src="./assets/images/portfolio/tfus1-result.png"
+          loading="lazy"
+        >
+        </figure>
+        <p>
+        <br>The proposed networks demonstrated accurate prediction of intracranial acoustic fields with substantially reduced computational time. Among the evaluated architectures, the CNN-based U-Net achieved the best overall performance, reaching a focal-region Dice score of approximately 94% on seen skull anatomies and 89% on unseen skull anatomies using CT inputs. The models also demonstrated the feasibility of predicting intracranial acoustic fields from MR images, suggesting the potential for CT-free applications.
+        <br><br>Using CT images, the CNN U-Net achieved a focal-region Dice score of 93.73% on seen skulls and 88.64% on unseen skulls, with focal peak localization errors of 1.36 mm and 1.90 mm, respectively. The corresponding peak pressure amplitude errors were 0.71% and 5.29%.
+        </p>
+        <figure style="width: 60%; margin: 1px auto;">
+        <img
+          src="./assets/images/portfolio/tfus1-table.png"
+          loading="lazy"
+        >
+        </figure>
+        <p>
+        <br>Remarkably, the networks also demonstrated promising performance using only MR images. The CNN U-Net achieved Dice scores of 93.09% on seen skulls and 79.48% on unseen skulls, with localization errors of 1.36 mm and 2.83 mm and peak pressure amplitude errors of 0.75% and 6.02%, respectively. Furthermore, pretraining the network on CT images followed by fine-tuning on MR images improved the unseen-skull Dice score to 82.60%, demonstrating the effectiveness of transfer learning for MR-based acoustic field prediction.
+        <br><br>In terms of computational efficiency, the CNN-based U-Net achieved an inference time of approximately 2.3 milliseconds, compared to over 300 seconds required by conventional <i>k</i>-space simulations. Even the more computationally demanding Swin Transformer model completed predictions within approximately 23 milliseconds, demonstrating the feasibility of real-time acoustic field estimation.
+        <br><br>Furthermore, our ablation study highlighted the importance of integrating anatomical information with the acoustic free-field. Incorporating skull images substantially improved prediction accuracy, confirming that multi-modal learning effectively captures skull-induced acoustic aberrations.
+        </p>
+      <h4>Conclusion</h4>
+        <p>
+        This research demonstrates the potential of multi-modal deep learning for real-time, patient-specific intracranial acoustic field prediction during tFUS therapy. By combining acoustic free-fields, skull images, and transducer placement information, our framework enables fast and accurate estimation of skull-induced acoustic distortions.
+        <br><br>Beyond accelerating acoustic simulations, this approach provides a foundation for developing digital twins of tFUS therapy, where intracranial acoustic fields can be dynamically updated according to changes in transducer placement. Ultimately, such systems could support more precise, adaptive, and personalized ultrasound treatments.
+        </p>
+      <h4> Personal reflections</h4>
+        <p>
+        This project was my first major research endeavor after entering graduate school. Looking back, I believe the two most meaningful contributions of this work were <strong>introducing the acoustic free-field as a network input</strong> and <strong>demonstrating the feasibility of intracranial acoustic field prediction using MR images</strong>.
+        <br><br>I consider the acoustic free-field to be a particularly effective input representation for deep learning-based ultrasound simulation. It inherently encodes essential transducer characteristics, including aperture diameter, radius of curvature, operating frequency, and beam orientation. Since the free-field remains identical for a given transducer configuration in its local coordinate system, a reference pressure map can be precomputed and simply rotated according to the transducer orientation. This enables efficient, real-time input generation without repeatedly performing numerical simulations. In my view, this makes the acoustic free-field an especially powerful representation for learning ultrasound propagation.
+        <br><br>Another exciting finding was that MR-based prediction could achieve reasonably high accuracy without requiring CT images as network inputs. While CT provides explicit information about skull anatomy and acoustic properties, acquiring high-resolution CT scans can be challenging due to radiation exposure concerns. This may also become a practical obstacle when translating the framework into clinical software or medical devices. To the best of our knowledge, this study was the first to demonstrate deep learning-based intracranial acoustic field prediction using MR images alone.
+        <br><br>Nevertheless, the performance degradation observed on unseen skull anatomies remains an important limitation. One possible explanation is the relatively small dataset, consisting of only 11 subjects. Acquiring a larger collection of high-quality patient-specific medical images will therefore be an important step toward improving generalization.
+        <br><br>Interestingly, our transfer learning experiments demonstrated that pretraining on CT images followed by fine-tuning on MR images improved prediction accuracy on unseen skulls. Building on this observation, I believe a promising future direction would be to pretrain a skull encoder using large-scale, publicly available CT datasets and subsequently fine-tune the model using a smaller collection of MR images. Such an approach could help the network learn more generalizable anatomical representations while reducing its dependence on extensive paired CT–MR datasets.
+        <br><br>This research laid the foundation for my subsequent work, <i>tFUSOperator</i>, which extends the framework toward more generalized acoustic field prediction across varying transducer configurations and operating conditions.
+      </p>
+      </details>
+
+      <details class="research-entry" id="tfus-operator">
+      <summary><span class="research-meta">2026 · Neural operators · Scientific machine learning</span><h3>tFUSOperator: toward fundamental transcranial focused ultrasound simulation model</h3><p>Extending transcranial focused ultrasound simulation to an operator learning framework. The work was presented in Digital Twins for Healthcare (DT4H) workshop at MICCAI 2026.</p><span class="research-read">Read article <span aria-hidden="true">↗</span></span></summary>
+      <div class="research-body">
+      <h4>Introduction</h4>
+      <figure>
+        <img
+          src="./assets/images/portfolio/tfus2-intro.png"
+          loading="lazy"
+        >
+        </figure>
+      <p>
+        <br>Building upon our previous work on multi-modal deep learning for transcranial focused ultrasound (tFUS) simulation, this research explores a more generalized framework for predicting intracranial acoustic pressure fields. While our earlier CNN- and Transformer-based surrogate models demonstrated the feasibility of real-time acoustic simulation, they primarily relied on learning direct mappings between input and output volumes.
+        <br><br>To move beyond conventional image-to-image regression, we introduce <i>tFUSOperator</i>, a neural operator framework that formulates transcranial ultrasound simulation as a mapping between function spaces. Rather than treating acoustic fields simply as voxelized images, this approach aims to learn a more structured representation of acoustic propagation through heterogeneous skull anatomies.
+      </p>
+      <h4>Motivation</h4>
+      <p>
+        Conventional deep learning surrogates for tFUS simulation face several limitations. First, their predictions are typically tied to fixed spatial grids, making it difficult to generalize across different discretizations. Second, these models primarily learn statistical correlations between input and output images, without explicitly considering the spatial relationships involved in acoustic wave propagation. Furthermore, previous approaches have often been developed under restricted treatment conditions, such as a single operating frequency or transducer configuration.
+        <br><br>To address these challenges, we sought to develop a coordinate-aware neural operator that represents acoustic and anatomical information within a shared physical coordinate system. By learning the relationship between spatially distributed inputs and the resulting acoustic field, the proposed framework aims to provide a more flexible and physically structured approach to tFUS simulation.
+      </p>
+      <h4>Methodology</h4>
+      <figure>
+        <img
+          src="./assets/images/portfolio/tfus2-formulate.png"
+          loading="lazy"
+        >
+        </figure>
+      <p>
+        <br>We formulated intracranial acoustic field prediction as an operator learning problem, where the network learns a mapping from the acoustic free-field, patient-specific skull anatomy, and treatment parameters to the resulting intracranial pressure field.
+        <br><br>Unlike conventional voxel-based networks, <i>tFUSOperator</i> explicitly incorporates physical coordinates into its architecture, allowing the model to process different input modalities according to their spatial locations. The framework consists of four main components:
+        <br><br><strong>Multi-modal encoder</strong>: Separate encoding branches extract features from the acoustic free-field and skull images (CT/MR). Each feature is associated with its physical coordinates, enabling the network to integrate acoustic and anatomical information within a shared coordinate system. A coordinate-decoupled cross-attention mechanism further separates spatial attention from modality-specific feature information.
+        <br><strong>Conditioning module</strong>: Transducer position and orientation are encoded using Fourier feature embeddings and multilayer perceptrons. These parameters provide additional information about the treatment configuration and are incorporated into the network through adaptive modulation.
+        <br><strong>Latent processor</strong>: A Transformer-based processor operates on a fixed set of latent tokens, capturing interactions between the acoustic field, skull anatomy, and transducer configuration. This latent representation enables efficient processing of high-dimensional spatial information without directly applying attention to every voxel.
+        <br><strong>Coordinate-based decoder</strong>: The processed latent representation is decoded into the intracranial pressure field using spatial coordinates as queries. Rather than reconstructing the output through a conventional voxel-based decoder, the network predicts acoustic pressure values at the specified query locations.
+        <br><br>To evaluate the proposed framework, we constructed a dataset using 13 human skull anatomies, with 300 transducer placements per skull and three operating frequencies (250, 400, and 500 kHz). Acoustic simulations were performed using the k-Wave toolbox to generate reference pressure fields. The dataset was divided into training, validation, and test sets at the skull level, allowing us to assess generalization to both unseen transducer placements on known skulls and entirely unseen skull anatomies.
+      </p>
+      <h4>Results</h4>
+      <figure>
+        <img
+          src="./assets/images/portfolio/tfus2-result.png"
+          loading="lazy"
+        >
+        </figure>
+      <p>
+        <br>The proposed tFUSOperator demonstrated accurate intracranial acoustic field prediction across different skull anatomies and operating frequencies. For seen skulls with unseen transducer placements, the model achieved Dice scores of 90.50% using CT and 90.56% using MR images, with peak localization errors of approximately 1.3 mm. On entirely unseen skulls, the Dice scores were 72.41% and 71.54% for CT and MR, respectively, with peak localization errors of approximately 3 mm. Notably, the model maintained a peak pressure amplitude error below 2% across all evaluation settings, demonstrating its ability to estimate acoustic intensity even under previously unseen anatomical conditions.
+        <figure style="width: 60%; margin: 1px auto;">
+        <img
+          src="./assets/images/portfolio/tfus2-table.png"
+          loading="lazy"
+        >
+        </figure>
+        </p><p>
+        <br>Another important finding was the comparable performance between CT- and MR-based predictions. Despite the limited visibility of skull structures in conventional MR images, the model achieved nearly identical accuracy with both modalities, further supporting the feasibility of radiation-free acoustic field estimation.
+        <br><br>In terms of computational efficiency, <i>tFUSOperator</i> required only 2.16 milliseconds per prediction, compared to approximately 122 seconds for conventional k-Wave simulations, achieving a speedup of approximately 56,000 times.
+        <br><br>Our ablation studies also demonstrated that incorporating skull anatomical information significantly improved prediction accuracy. Furthermore, the proposed coordinate-decoupled attention mechanism showed improved generalization to unseen skull anatomies compared to conventional feature-dependent cross-attention, suggesting the benefit of explicitly separating spatial relationships from anatomical feature representations.
+      </p>
+      <h4>Conclusion</h4>
+      <p>
+        This research introduces <i>tFUSOperator</i>, a coordinate-aware neural operator for real-time intracranial acoustic field prediction. By reformulating tFUS simulation as an operator learning problem, the proposed framework moves beyond conventional voxel-to-voxel regression toward a more structured representation of acoustic propagation.
+        <br><br>The model demonstrates accurate and efficient predictions across multiple operating frequencies and patient-specific skull anatomies, while maintaining comparable performance with CT and MR inputs. These findings highlight the potential of operator learning as a computational foundation for patient-specific tFUS digital twins.
+      </p>
+      <h4>Personal reflections</h4>
+      <p>
+        Building upon my previous research, I initiated this project with the goal of developing a more fundamental and generalizable framework for transcranial focused ultrasound simulation. This has been one of the most exciting research projects I have worked on, and it remains an ongoing effort.
+        <br><br>In my view, one of the greatest advantages of neural operators over conventional voxel-to-voxel regression models is their potential for <strong>resolution-invariant inference</strong>. For example, a model can be trained using relatively coarse spatial grids to reduce memory consumption and computational costs, while still allowing predictions on finer grids without retraining. Although this capability was not evaluated in the paper, I confirmed through additional experiments that <i>tFUSOperator</i> can perform inference on higher-resolution grids than those used during training. This was particularly exciting to me, as it provided encouraging evidence that our model can function as a neural operator beyond fixed-grid regression. I am especially pleased that this work represents our first step toward extending deep learning-based acoustic simulation into the field of operator learning.
+        <br><br>Another major objective of this research is to develop a unified model capable of handling diverse treatment conditions, including operating frequency, transducer aperture diameter, and radius of curvature (ROC). Compared to our previous model, which was trained under a single operating frequency, <i>tFUSOperator</i> takes an important step forward by supporting multiple frequencies within a single model.
+        <br><br>Nevertheless, several challenges remain. In particular, generalization to unseen skull anatomies is still insufficient. Our experiments also revealed that prediction accuracy tends to decrease at higher operating frequencies, where the acoustic focal region becomes smaller and skull-induced aberrations become more pronounced, resulting in lower average Dice scores. Improving robustness under these challenging conditions is therefore an important direction for future research.
+        <br><br>Furthermore, the current framework has not yet been extended to explicitly handle variations in transducer geometry, such as aperture diameter, radius of curvature, and focal length. Incorporating these parameters and evaluating generalization across diverse transducer configurations will be a central focus of our ongoing work.
+      </p>
+      
+      </details></div>
+
+      <details class="research-entry" id="acoustic-lens">
+      <summary><span class="research-meta">2026 · Acoutic holography · Design optimization · Genetic algorithm</span><h3>Optimization of acoustic holographic lens for transcranial focused ultrasound using active learning-based genetic algorithm</h3><p>Combining surrogate prediction, genetic optimization, and active learning for lens design.</p><span class="research-read">Read article <span aria-hidden="true">↗</span></span></summary>
+      <div class="research-body">
+        <h4>TBA</h4>
+      </details>
+
+<template id="research-article-template"><details class="research-entry" id="new-project"><summary><span class="research-meta">YEAR · TOPIC</span><h3>Project title</h3><p>One-sentence project description.</p><span class="research-read">Read article ↗</span></summary><div class="research-body"><h4>Overview</h4><p>Research question and motivation.</p><h4>My contribution</h4><p>Describe your own role.</p><h4>Approach</h4><p>Method and optional figures.</p><h4>Results</h4><p>Verified findings and limitations.</p><h4>Resources</h4><p>Paper, code, or presentation links.</p></div></details></template>
+</article>
+<article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.658120471217!2d126.9337517!3d37.5631178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9892bef2fa45%3A0x71e0f2441a8a0071!2z7Jew7IS464yA7ZWZ6rWQIOyyqOuLqOqzvO2Vmeq4sOyIoOyXsOq1rOq0gA!5e0!3m2!1sko!2skr!4v1744358209703!5m2!1sko!2skr"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-description">
+          <p class="timeline-text">
+            Advanced Science and Technology Center (ASTC) 616, Yonsei University, South Korea<br>
+            You can reach me via email at islandz@yonsei.ac.kr.
+          </p>
+        </section>
+
+        <!--
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      -->  
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
