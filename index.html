@@ -879,11 +879,52 @@
         <br><br>Furthermore, the current framework has not yet been extended to explicitly handle variations in transducer geometry, such as aperture diameter, radius of curvature, and focal length. Incorporating these parameters and evaluating generalization across diverse transducer configurations will be a central focus of our ongoing work.
       </p>
       
-      </details></div>
+      </details>
 
       <details class="research-entry" id="acoustic-lens">
       <summary><span class="research-meta">2026 · Acoutic holography · Design optimization · Genetic algorithm</span><h3>Optimization of acoustic holographic lens for transcranial focused ultrasound using active learning-based genetic algorithm</h3><p>Combining surrogate prediction, genetic optimization, and active learning for lens design.</p><span class="research-read">Read article <span aria-hidden="true">↗</span></span></summary>
       <div class="research-body">
+        <h4>Introduction</h4>
+        <p>
+          Acoustic holography (AH) is a technique that enables precise manipulation of ultrasound propagation through a specially designed acoustic lens. By introducing spatially varying phase delays, an acoustic holographic lens can reshape the transmitted ultrasound field to produce a desired focal distribution.
+          <br><br>In transcranial focused ultrasound (tFUS), acoustic holography offers a promising approach to compensating for skull-induced aberrations and achieving precise targeting of brain regions. Unlike conventional multi-element phased-array transducers, which require complex electronic phase control, holographic lenses can manipulate acoustic wavefronts using a single-element transducer, potentially reducing hardware complexity and cost.
+        </p>
+        <h4>Motivation</h4>
+        <figure>
+        <img
+          src="./assets/images/portfolio/lopt-intro.png"
+          loading="lazy"
+        >
+        </figure>
+        <p>
+          <br>Conventional acoustic holographic lenses are typically designed using the time-reversal (TR) method, which reconstructs the required phase distribution by simulating ultrasound propagation backward from a target region toward the transducer. Although effective for focusing ultrasound at a specific location, this approach has limitations when the desired target has a complex three-dimensional geometry. Interference between waves originating from different points within the target volume can produce undesirable focal patterns, while the resulting lens design cannot be directly refined through further optimization.
+          <br><br>An alternative is to formulate acoustic lens design as an inverse design optimization problem, where the lens geometry is iteratively adjusted to maximize the overlap between the resulting acoustic focal region and the desired target volume. However, evaluating each candidate lens requires computationally expensive numerical simulations, making conventional optimization methods impractical for exploring high-dimensional design spaces.
+          <br><br>To overcome these limitations, we proposed a surrogate-assisted optimization framework that combines the rapid predictive capability of deep learning with the global search capability of genetic algorithms, while incorporating active learning to progressively improve the surrogate model.
+        </p>
+        <h4>Methodology</h4>
+        <figure style="width: 60%; margin: 1px auto;">
+        <img
+          src="./assets/images/portfolio/lopt-datagen.png"
+          loading="lazy"
+        >
+        </figure>
+        <p>
+          <br>Our framework consists of four main components: Bézier-based lens parameterization, acoustic simulation, CNN-based surrogate modeling, and active learning-guided genetic optimization.
+          <br><br><strong>Lens parameterization</strong>: We represented the acoustic holographic lens using a 10th-degree Bézier surface defined by 11 × 11 control points. The height of each control point serves as an independent design variable, resulting in a 121-dimensional continuous optimization problem. This representation enables smooth and flexible lens geometries while maintaining a manageable number of parameters.
+          <br><strong>Acoustic simulation</strong>: For each candidate lens, the resulting acoustic pressure field was computed using the k-Wave numerical simulation toolbox, accounting for wave propagation through the lens and patient-specific skull structures. The generated focal region was compared with the desired target volume using the F1 score, which measures their volumetric overlap.
+          <br><strong>CNN-based surrogate model</strong>: We developed a convolutional neural network to approximate the relationship between lens geometry and acoustic focusing performance. The network receives the 11 × 11 array of Bézier control-point heights and directly predicts the corresponding F1 score, enabling rapid evaluation of candidate designs without performing full numerical simulations.
+          <br><strong>Genetic algorithm with active learning</strong>: A genetic algorithm (GA) was employed to explore the lens design space through crossover and mutation operations. Instead of simulating every generated candidate, the CNN surrogate pre-screens the population and selects promising designs for numerical evaluation. The newly simulated samples are then incorporated into the training dataset to update the surrogate model, forming an iterative active learning loop.
+        </p>
+        <figure>
+        <img
+          src="./assets/images/portfolio/lopt-workflow.png"
+          loading="lazy"
+        >
+        </figure>
+        <p>
+          <br>We initialized the optimization with 10,000 randomly generated lens geometries and performed seven generations of genetic optimization, adding 1,000 simulation-verified samples per generation. Through this process, the surrogate model progressively learned to predict performance more accurately in high-performing regions of the design space.
+          <br><br>The proposed framework was evaluated using three human skull models and four target geometries: two synthetic targets (an aberration-corrected focus and an elliptical focus) and two anatomically realistic deep brain structures (the thalamus and putamen).
+        </p>
         <h4>Personal reflections</h4>
         <p>
           This research was conducted in collaboration with the CMMD Lab at Ewha Womans University. Our lab primarily led the problem formulation, acoustic simulations, and further analyses, while the CMMD Lab focused on developing the deep learning surrogate model, implementing active learning, and constructing the optimization framework.
@@ -901,7 +942,7 @@
         <br><br>One of the biggest challenges was learning how difficult VLM fine-tuning can be in practice. I still remember how frustrating it was when our model, after LoRA fine-tuning, kept repeating the same phrases like a parrot. I honestly felt like crying! Nevertheless, after considerable trial and error, we eventually achieved promising results, which made the experience even more rewarding.
         <br><br>Beyond the technical aspects, this project also helped me significantly improve my communication and collaboration skills. Working closely with my colleague taught me how to exchange ideas, discuss technical challenges, and solve problems together more effectively. (As a bonus, my English improved a lot along the way.)
         </p>
-      </details>
+      </details></div>
 
 <template id="research-article-template"><details class="research-entry" id="new-project"><summary><span class="research-meta">YEAR · TOPIC</span><h3>Project title</h3><p>One-sentence project description.</p><span class="research-read">Read article ↗</span></summary><div class="research-body"><h4>Overview</h4><p>Research question and motivation.</p><h4>My contribution</h4><p>Describe your own role.</p><h4>Approach</h4><p>Method and optional figures.</p><h4>Results</h4><p>Verified findings and limitations.</p><h4>Resources</h4><p>Paper, code, or presentation links.</p></div></details></template>
 </article>
